@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+        @Styles.Render("~/Content/css")
+        <link href="~/Content/Site.css" rel="stylesheet" />
+
+</head>
+<body ng-app="studio"  layout="column">
+
+    <md-toolbar md-ink-ripple="#FFFFFF" layout="row" md-whiteframe="3">
+        <h2 flex="100">Studio</h2>
+    </md-toolbar>
+
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-aria.js"></script>
+    <script src="~/Scripts/angular-animate.js"></script>
+    <script src="~/Scripts/angular-material.js"></script>
+    <script src="~/Scripts/app.js"></script>    
+    @RenderSection("scripts", required: false)
+</body>
+</html>
