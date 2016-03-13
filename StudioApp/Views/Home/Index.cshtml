@@ -1,19 +1,20 @@
-﻿<div flex layout="row">
-
-    <md-sidenav md-is-locked-open="true" class="md-whiteframe-2dp" layout-gt-sm>
-        
-    </md-sidenav>
-    
+﻿<div flex layout="column" ng-cloak>
 
 
+    <md-toolbar layout="row" ng-click="toggleLeft()" class="md-whiteframe-2dp">
+        <button id="btn-toggle" class="md-icon-button md-button" md-ink-ripple="true" hide-gt-md aria-label="Toggle Menu" ng-click="toggleLeft()">
+            <i class="material-icons">menu</i>
+        </button>
+        <div layout="row" layout-fill layout-align="center stretch" >Studio</div>
+    </md-toolbar>
 
-    <div layout="column" ng-cloak>
-        <md-toolbar class="md-warn">
+    <div id="test-content" layout="column" ng-cloak>
+        <md-toolbar class="md-primary">
             <div class="md-toolbar-tools">
                 <h2 class="md-flex">Please select object</h2>
             </div>
         </md-toolbar>
-        <md-content flex layout-padding>
+        <md-content flex layout-padding class="md-whiteframe-3dp">
             <p>Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.</p>
             <p>
                 Facete delenit argumentum cum at. Pro rebum nostrum contentiones ad. Mel exerci tritani maiorum at, mea te audire phaedrum, mel et nibh aliquam. Malis causae equidem vel eu. Noster melius vis ea, duis alterum oporteat ea sea. Per cu vide munere fierent.
@@ -27,7 +28,7 @@
             <p>
                 Sint unum eam id. At sit fastidii theophrastus, mutat senserit repudiare et has. Atqui appareat repudiare ad nam, et ius alii incorrupte. Alii nullam libris his ei, meis aeterno at eum. Ne aeque tincidunt duo. In audire malorum mel, tamquam efficiantur has te.
             </p>
- 
+
         </md-content>
     </div>
 

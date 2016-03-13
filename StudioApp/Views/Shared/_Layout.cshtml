@@ -6,13 +6,15 @@
     <title>@ViewBag.Title</title>
         @Styles.Render("~/Content/css")
         <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
-<body ng-app="studio"  layout="column">
+<body ng-app="studio"  layout="row" ng-controller="MainCtrl">
 
-    <md-toolbar md-ink-ripple="#FFFFFF" layout="row" md-whiteframe="3">
-        <h2 flex="100">Studio</h2>
-    </md-toolbar>
+
+    <md-sidenav md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" class="md-whiteframe-2dp" layout-gt-sm>
+
+    </md-sidenav>
 
     @RenderBody()
 

@@ -1,19 +1,46 @@
-﻿md-toolbar h1, h2, h3, h4, h5, h6 {
+﻿md-toolbar div{
     text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    font-variant: small-caps;
+    margin-top: 0.95% !important;
 }
 
 html, body {
-  font-family: 'Roboto', sans-serif;
-  font-size:14px;
-  height:100%;
-  margin: 0px;
-  padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    height: 100%;
+    background-color: #f6f6f6;
 }
 
 md-sidenav {
-
     min-width: 272px;
-    max-width:272px;
+    max-width: 272px;
     width: 272px;
-
+    background-color: #039BE5;
 }
+
+#btn-toggle
+{
+    margin: 0.5% !important;
+    line-height: 50px;
+    width: 50px !important;
+    height : 50px !important;
+}
+
+
+
+#test-content {
+    margin: 5px;
+}
+
+#test-content > md-toolbar > div > h2 {
+    font-weight: 500;
+}
+
+
+#toggleButton{
+    
+    margin-right: 5%;
+}
+
